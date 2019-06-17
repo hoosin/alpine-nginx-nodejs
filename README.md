@@ -5,11 +5,15 @@ A simple docker image to Javascript CI , Only 72MB in size! 🎉🎉🎉
 
 The ```latest``` tag is currently:
 
-> nginx:1.15.7-alpine
-> libuv:latest
-> nodejs:10.16.0
-> npm:6.9.0
-> yarn:1.16.0
+- nginx:1.15.7-alpine
+
+- libuv:latest
+
+- nodejs:10.16.0
+
+- npm:6.9.0
+
+- yarn:1.16.0
 
 ## Tags
 
@@ -38,7 +42,6 @@ docker pull hoosin/alpine-nginx-nodejs
 ```Dockerfile
 FROM hoosin/alpine-nginx-nodejs:latest
 ```
-
 
 ## Example
 An example of using this image can be found in [example](https://github.com/hoosin/alpine-nginx-nodejs/tree/master/example).
