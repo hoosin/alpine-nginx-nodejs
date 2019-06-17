@@ -5,6 +5,8 @@ MAINTAINER hoosin <hoosin.git@gmail.cn>
 
 ENV APP_ROOT /home/example.hoosin.com
 ENV SRC_DIR ./node_modules ./public ./src
+ENV NGINX_STATIC /usr/share/nginx/html/
+ENV NGINX_CONF /etc/nginx/
 
 WORKDIR $APP_ROOT
 COPY . $APP_ROOT
@@ -16,10 +18,9 @@ RUN node -v \
     && yarn config get registry \
     && yarn install --verbose \
     && yarn build \
+    && cp -r nginx/* $NGINX_CONF \
+    && cp -r build/* $NGINX_STATIC \
     && rm -rf $SRC_DIR
-
-ADD ./build/ /usr/share/nginx/html/
-ADD ./nginx/nginx.conf /etc/nginx/
 
 EXPOSE 80
 RUN nginx -t
