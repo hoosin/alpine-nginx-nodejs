@@ -38,7 +38,7 @@ To return to the official image:
 docker pull hoosin/alpine-nginx-nodejs
 ```
 
-### Use as base image
+## Use as base image
 ```Dockerfile
 FROM hoosin/alpine-nginx-nodejs:latest
 ```
