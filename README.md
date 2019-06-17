@@ -1,6 +1,6 @@
 # alpine-nginx-nodejs
 
-A simple docker image to Javascript CI , Only 72MB in size! 🎉🎉🎉
+A tiny docker image for major stream workflow CI (like jenkins) for JavaScript, Only 72MB in size! 🎉🎉🎉
 
 
 The ```latest``` tag is currently:
