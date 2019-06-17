@@ -26,7 +26,7 @@ Tag | Nginx version | Node.js version | Npm version | Yarn version
 
 ## Hacking
 
-To test changes locally, you can edit this image and rebuild it, replacing the heroku/node image on your machine:
+To test changes locally, you can edit this image and rebuild it, replacing the hoosin/alpine-nginx-nodejs image on your machine:
 
 ```shell
 docker build -t hoosin/alpine-nginx-nodejs .
