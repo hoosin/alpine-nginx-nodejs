@@ -22,7 +22,7 @@ To use a specific combination of nginx and node.js see the following table of av
 Tag | Nginx version | Node.js version | Npm version | Yarn version
 --- | --- | --- | --- | ---
 `latest` | 1.15.7-alpine | 12.4.0 | 6.9.0 | 1.16.0
-
+`8.x` | 1.15.7-alpine | 8.16.0 | 6.4.1 | 1.16.0
 
 ## Hacking
 
